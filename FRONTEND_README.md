@@ -66,7 +66,7 @@ Create `.env.local` file in the frontend directory:
 
 ```env
 # Local development (default)
-VITE_API_BASE_URL=http://localhost:5000/api
+VITE_API_BASE_URL=http://https://resume-builder-backend-aj5w.onrender.com/api
 
 # Production deployment
 VITE_API_BASE_URL=https://your-backend-url.onrender.com/api

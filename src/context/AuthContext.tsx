@@ -20,7 +20,7 @@ interface AuthContextType {
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api";
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "https://resume-builder-backend-aj5w.onrender.com/api";
 const TOKEN_KEY = "rf_token";
 const USER_KEY = "rf_user";
 
@@ -96,7 +96,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
         } catch (err: any) {
             if (err instanceof TypeError) {
                 // fetch failed to reach server (CORS, network down, server stopped)
-                throw new Error("Unable to contact backend API. Is the server running on http://localhost:5000?");
+                throw new Error("Unable to contact backend API. Is the server running on https://resume-builder-backend-aj5w.onrender.com?");
             }
             throw err;
         }
@@ -122,7 +122,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
             persist(data.token, data.user);
         } catch (err: any) {
             if (err instanceof TypeError) {
-                throw new Error("Unable to contact backend API. Is the server running on http://localhost:5000?");
+                throw new Error("Unable to contact backend API. Is the server running on https://resume-builder-backend-aj5w.onrender.com?");
             }
             throw err;
         }

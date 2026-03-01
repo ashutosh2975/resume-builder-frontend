@@ -3,7 +3,7 @@ import jsPDF from 'jspdf';
 import type { RefObject } from 'react';
 import type { ResumeData } from '@/context/ResumeContext';
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
+const API_BASE = import.meta.env.VITE_API_BASE_URL || 'https://resume-builder-backend-aj5w.onrender.com/api';
 
 export type ExportQuality = 'low' | 'medium' | 'high';
 

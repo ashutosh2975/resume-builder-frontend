@@ -109,7 +109,7 @@ const Login: React.FC = () => {
                                 className="flex items-center gap-2 bg-yellow-100 border border-yellow-300 text-yellow-800 text-sm rounded-xl px-4 py-3 mb-6"
                             >
                                 <AlertCircle className="w-4 h-4 shrink-0" />
-                                Backend server is unreachable. Please start the API on <code>localhost:5000</code> before logging in.
+                                Backend server is unreachable. Please start the API on <code>https://resume-builder-backend-aj5w.onrender.com</code> before logging in.
                             </motion.div>
                         )}
                     </AnimatePresence>
